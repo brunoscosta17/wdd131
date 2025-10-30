@@ -1,0 +1,79 @@
+<!doctype html>
+
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles/base.css" />
+
+
+<!-- JS (deferred per spec) -->
+<script src="scripts/getdates.js" defer></script>
+</head>
+
+
+<body>
+    <header class="site-header">
+        <span id="course-title" class="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+
+        <nav aria-label="Primary" class="site-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/🔧your-linkedin-slug" rel="me noopener"
+                        target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="./final-project/" aria-label="Final Project folder placeholder">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="main" class="container">
+        <h1 class="visually-hidden">Bruno da Silva Costa</h1>
+
+
+        <section class="card" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+            <picture>
+                <!-- Use WEBP if possible with JPG fallback -->
+                <source srcset="images/profile.webp" type="image/webp" />
+                <img src="images/profile.jpg" alt="Portrait of Bruno da Silva Costa" width="600" height="400"
+                    loading="lazy" />
+            </picture>
+            <p>
+                Hi! I’m <strong>Bruno da Silva Costa</strong>, a front‑end developer focused on Angular and modern web
+                practices. This page is my
+                WDD 131 course landing site. I’ll post weekly links, notes, and my final project here.
+            </p>
+            <ul class="fact-list">
+                <li>Location: Uberaba, Minas Gerais, Brazil</li>
+                <li>Stack: Angular, TypeScript, HTML, CSS, Jest</li>
+                <li>Interests: UI performance, accessibility, clean design</li>
+            </ul>
+        </section>
+
+
+        <section class="card" aria-labelledby="location-title">
+            <h2 id="location-title">My Place</h2>
+            <picture>
+                <source srcset="images/location.webp" type="image/webp" />
+                <img src="images/location.jpg" alt="City view of Uberaba, Minas Gerais" width="600" height="400"
+                    loading="lazy" />
+            </picture>
+            <p>
+                Uberaba is in the state of Minas Gerais. I love building side projects and exploring new tech while
+                spending time with my family.
+            </p>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="currentyear"></span> • Bruno da Silva Costa • Brazil
+        </p>
+        <p id="lastModified" aria-live="polite"></p>
+    </footer>
+</body>
+
+</html>
