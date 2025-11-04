@@ -1,0 +1,31 @@
+.brand-row {
+    padding: 1rem 2rem;
+}
+
+.site-nav {
+    border-top: none;
+}
+
+.site-nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: .5rem;
+    padding: 0 2rem 1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.container {
+    padding: 0 2rem;
+}
+
+.album {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 2rem 2.5rem;
+}
+
+figure {
+    padding: .9rem;
+}

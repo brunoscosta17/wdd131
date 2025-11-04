@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Temple Album</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS (mobile first) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <!-- Larger view overrides -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 760px)">
+
+    <!-- JS (deferred) -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-row">
+            <h1 class="brand">Temple Album</h1>
+
+            <!-- Hamburger (small only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="primary-nav"
+                aria-expanded="false">
+                <span class="hamburger-lines" aria-hidden="true"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+        </div>
+
+        <nav id="primary-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">Home</h2>
+
+        <!-- Album grid (9 figures) -->
+        <section class="album" aria-label="Temple images">
+            <!-- Repita a mesma imagem se desejar (placeholder) -->
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-switzerland.jpg" alt="Bern Switzerland Temple exterior" width="800" height="533"
+                    loading="lazy">
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> • Bruno da Silva Costa • Brazil</p>
+        <p id="lastModified" aria-live="polite"></p>
+    </footer>
+
+    <!-- a11y helper -->
+    <span class="visually-hidden" id="sr-status" aria-live="polite"></span>
+</body>
+
+</html>
