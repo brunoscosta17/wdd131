@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Country facts and weather for Madagascar." />
+    <title>Madagascar • Place Page</title>
+
+    <!-- CSS -->
+    <link rel="preload" href="styles/place.css" as="style" />
+    <link rel="stylesheet" href="styles/place.css" />
+
+    <!-- JS -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 id="place-title">Madagascar</h1>
+    </header>
+
+    <main>
+        <!-- HERO (WebP srcset) -->
+        <figure class="hero">
+            <!-- Option A: basic <img> with srcset -->
+            <img src="images/madagascar-hero-large.webp" srcset="images/madagascar-hero-small.webp 600w,
+                images/madagascar-hero-large.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" width="1200"
+                height="675" loading="eager" decoding="async" fetchpriority="high"
+                alt="Ring-tailed lemurs in Madagascar" />
+            <figcaption class="visually-hidden">Lemurs in Madagascar</figcaption>
+        </figure>
+
+        <!-- INFO + WEATHER -->
+        <section class="info card" aria-labelledby="data-heading">
+            <h2 id="data-heading">Data</h2>
+            <dl class="kv">
+                <div>
+                    <dt>Area:</dt>
+                    <dd>587,041 sq km</dd>
+                </div>
+                <div>
+                    <dt>Population:</dt>
+                    <dd>27,691,018</dd>
+                </div>
+                <div>
+                    <dt>Capital:</dt>
+                    <dd>Antananarivo</dd>
+                </div>
+                <div>
+                    <dt>Languages:</dt>
+                    <dd>Malagasy, French</dd>
+                </div>
+                <div>
+                    <dt>Currency:</dt>
+                    <dd>Malagasy Ariary</dd>
+                </div>
+                <div>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+3</dd>
+                </div>
+                <div>
+                    <dt>Calling Code:</dt>
+                    <dd>+261</dd>
+                </div>
+                <div>
+                    <dt>Internet TLD:</dt>
+                    <dd>.mg</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="weather card" aria-labelledby="weather-heading">
+            <div class="weather-title">
+                <h2 id="weather-heading">Weather</h2>
+
+                <!-- MOBILE-ONLY SVG ICON -->
+                <svg class="weather-icon" viewBox="0 0 64 64" role="img" aria-label="Partly cloudy">
+                    <title>Partly cloudy</title>
+                    <circle cx="20" cy="20" r="9" />
+                    <path d="M40 28a10 10 0 0 0-19.4-3.6A8 8 0 0 0 20 44h20a8 8 0 0 0 0-16z" />
+                </svg>
+            </div>
+
+            <dl class="kv">
+                <!-- keep these static to match rubric; JS reads them -->
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temp">10</span> °C</dd>
+                </div>
+                <div>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                </div>
+                <div>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind">5</span> km/h</dd>
+                </div>
+                <div>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windchill">N/A</span></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            <span id="copyright-year"></span> ©
+            <span class="owner">Rubia Magdelena Francesco</span>
+            <span class="dot">•</span> Madagascar
+        </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
