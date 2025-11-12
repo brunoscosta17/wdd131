@@ -7,11 +7,9 @@
     <meta name="description" content="Country facts and weather for Madagascar." />
     <title>Madagascar • Place Page</title>
 
-    <!-- CSS -->
     <link rel="preload" href="styles/place.css" as="style" />
     <link rel="stylesheet" href="styles/place.css" />
 
-    <!-- JS -->
     <script src="scripts/place.js" defer></script>
 </head>
 
@@ -21,9 +19,7 @@
     </header>
 
     <main>
-        <!-- HERO (WebP srcset) -->
         <figure class="hero">
-            <!-- Option A: basic <img> with srcset -->
             <img src="images/madagascar-hero-large.webp" srcset="images/madagascar-hero-small.webp 600w,
                 images/madagascar-hero-large.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" width="1200"
                 height="675" loading="eager" decoding="async" fetchpriority="high"
@@ -31,7 +27,6 @@
             <figcaption class="visually-hidden">Lemurs in Madagascar</figcaption>
         </figure>
 
-        <!-- INFO + WEATHER -->
         <section class="info card" aria-labelledby="data-heading">
             <h2 id="data-heading">Data</h2>
             <dl class="kv">
@@ -74,7 +69,6 @@
             <div class="weather-title">
                 <h2 id="weather-heading">Weather</h2>
 
-                <!-- MOBILE-ONLY SVG ICON -->
                 <svg class="weather-icon" viewBox="0 0 64 64" role="img" aria-label="Partly cloudy">
                     <title>Partly cloudy</title>
                     <circle cx="20" cy="20" r="9" />
@@ -83,7 +77,6 @@
             </div>
 
             <dl class="kv">
-                <!-- keep these static to match rubric; JS reads them -->
                 <div>
                     <dt>Temperature:</dt>
                     <dd><span id="temp">10</span> °C</dd>
