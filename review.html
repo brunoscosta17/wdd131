@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <section class="review-form">
+            <h2>Your review was submitted.</h2>
+
+            <p>
+                You have completed
+                <strong><span id="reviewCount">0</span> review(s)</strong>
+                on this site.
+            </p>
+
+            <hr>
+
+            <h3>Review Details</h3>
+            <dl class="review-details">
+                <dt>Product:</dt>
+                <dd id="summaryProduct">–</dd>
+
+                <dt>Rating:</dt>
+                <dd id="summaryRating">–</dd>
+
+                <dt>Date of Installation:</dt>
+                <dd id="summaryDate">–</dd>
+
+                <dt>Your Name:</dt>
+                <dd id="summaryName">–</dd>
+            </dl>
+
+            <p class="back-link">
+                <a href="form.html">Submit another review</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Bruno Costa – Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</body>
+
+</html>
