@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Record your daily scripture study, insights, and feelings.">
+    <meta name="author" content="Bruno da Silva Costa">
+    <title>Daily Scripture Journey | Daily Journal</title>
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/journal.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-mark">DSJ</span>
+            <div class="logo-text">
+                <h1>Daily Scripture Journey</h1>
+            </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plans.html">Reading Plans</a></li>
+                <li><a href="journal.html" class="active">Daily Journal</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="journal-layout">
+            <form id="journal-form" class="card" novalidate>
+                <h2>Today’s entry</h2>
+
+                <div class="form-group">
+                    <label for="entry-date" class="required">Date</label>
+                    <input type="date" id="entry-date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="entry-passage" class="required">Passage or chapter</label>
+                    <input type="text" id="entry-passage" name="passage" placeholder="e.g., John 3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="entry-feeling" class="required">How did you feel?</label>
+                    <select id="entry-feeling" name="feeling" required>
+                        <option value="">Select one...</option>
+                        <option value="grateful">Grateful</option>
+                        <option value="peaceful">Peaceful</option>
+                        <option value="encouraged">Encouraged</option>
+                        <option value="confused">Confused / have questions</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="entry-note">Notes &amp; impressions</label>
+                    <textarea id="entry-note" name="note" rows="5"
+                        placeholder="What stood out to you today?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="entry-name">Your name (optional)</label>
+                    <input type="text" id="entry-name" name="name" placeholder="Your name">
+                </div>
+
+                <button type="submit" class="btn primary">Save entry</button>
+
+                <p class="hint">
+                    <!-- JS pode atualizar isso com o total salvo em localStorage -->
+                    Total entries: <span id="entry-count">0</span>
+                </p>
+            </form>
+
+            <section class="card" aria-label="Recent entries">
+                <h2>Recent entries</h2>
+
+                <!-- JS vai preencher esta lista com template literals -->
+                <ul id="entries-list" class="entries-list">
+                    <!-- li gerados por journal.js -->
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Daily Scripture Journey • Bruno da Silva Costa</p>
+    </footer>
+</body>
+
+</html>

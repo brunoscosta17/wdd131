@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose a scripture reading plan that fits your schedule and goals.">
+    <meta name="author" content="Bruno da Silva Costa">
+    <title>Daily Scripture Journey | Reading Plans</title>
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/plans.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-mark">DSJ</span>
+            <div class="logo-text">
+                <h1>Daily Scripture Journey</h1>
+            </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plans.html" class="active">Reading Plans</a></li>
+                <li><a href="journal.html">Daily Journal</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <header class="page-header">
+            <h2>Reading plans</h2>
+            <p><!-- TODO: pequeno parágrafo explicando como escolher um plano --></p>
+
+            <!-- Exemplo de filtro para usar array + filter() -->
+            <label for="focus-filter" class="inline-label">
+                Filter by focus:
+                <select id="focus-filter" name="focus">
+                    <option value="all">All</option>
+                    <option value="nt">New Testament</option>
+                    <option value="gospels">Four Gospels</option>
+                    <option value="bom">Book of Mormon</option>
+                </select>
+            </label>
+        </header>
+
+        <!-- JS vai preencher esta seção com cards -->
+        <section id="plans-grid" class="cards-grid" aria-label="Reading plans list">
+            <!-- renderizado por plans.js -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Daily Scripture Journey • Bruno da Silva Costa</p>
+    </footer>
+</body>
+
+</html>
